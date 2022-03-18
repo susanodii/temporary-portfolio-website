@@ -72,20 +72,144 @@ margin-left: 280px;
     color: black;
 }
 
-@media (orientation: portrait) {
-   
+@media screen and  (max-width: 479px) {
    .container{
-       color:palevioletred
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: auto;
+     max-width: auto;
+       
    }
    
-    .about_me  {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 800px;
-      width: 300px;
+   
+    .about_me{
+        height: auto;
+        
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content ;
+    margin: unset;
+    border: none;
+    padding-right:10px ;
+    
+}
+
+.my_name{
+    font-size: 30px;
+    padding-left: 10px;
+    text-align:center ;
+}
+.stack{
+    font-size: 30px;
+    padding-left: 60px;
+}
+.my_img{
+     
+        width: 300px;
+        padding-left: 45px;
+    
+}
+.social_media_links{
+    font-size: 40px;
+}
     }
-  }
+   
+   
+    @media  screen and (min-width:480px) and (max-width:767px) {
+        body{
+            background-color: aqua;
+        }
+        
+        .container{
+            display: flex;
+             justify-content: center;
+            align-items: center;
+            height: auto;
+            max-width: auto;
+        }
+        
+        
+         .about_me{
+             height: auto;
+         display: flex;
+         flex-direction: column;
+         margin-right:20rem ;
+         margin: unset;
+         margin-top: 20%;
+         border: none;
+     }
+     
+     .my_name{
+         font-size: 70px;
+         padding-left: 10px;
+         text-align:center ;
+     }
+     .stack{
+         font-size: 70px;
+         padding-left: 60px;
+     }
+     .my_img{
+          
+             width: 300px;
+             margin-left: 40px;
+         
+     }
+     .social_media_links{
+         font-size: 70px;
+     }
+         }
+
+         @media screen and (min-width: 768px)and(max-width:1023px) {
+            .container{
+                display: flex;
+                 justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            
+            
+             .about_me{
+                 height: auto;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-right:50px ;
+             margin: unset;
+             text-align: center;
+             padding-right: 50px;
+             padding-left: 0;
+             margin-left:0 ;
+             
+         }
+         
+         .my_name{
+             font-size: 90px;
+             padding-left: 10px;
+             text-align:center ;
+         }
+         .stack{
+             font-size: 90px;
+             padding-left: 60px;
+         }
+         .my_img{
+              
+                 width: 300px;
+                 margin-left: 40px;
+             
+         }
+         .social_media_links{
+             font-size: 90px;
+         }
+             }
+    
+
+
+
+
+
 
 
 
